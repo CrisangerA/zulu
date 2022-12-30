@@ -1,0 +1,19 @@
+GET http://localhost:10369/api/items/2 HTTP/1.1
+
+### 
+GET http://localhost:10369/api/items?q HTTP/1.1
+
+###
+POST http://localhost:10369/api/items HTTP/1.1
+content-type: application/json
+
+{
+  "title": "test product",
+  "price": 13.5,
+  "description": "lorem ipsum set",
+  "image": "https://i.pravatar.cc",
+  "category": "electronic"
+}
+
+###
+DELETE  http://localhost:10369/api/items/6 HTTP/1.1
